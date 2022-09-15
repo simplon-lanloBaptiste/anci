@@ -34,8 +34,6 @@
       - port: 80
         name: front_port
     backend_address_pools:
-      - backend_addresses:
-          - ip_address: "{{vm_iface.state.ip_configurations[0].private_ip_address}}"
         name: back_address_pool
     backend_http_settings_collection:
       - port: 80
