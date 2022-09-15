@@ -34,7 +34,7 @@
       - port: 80
         name: front_port
     backend_address_pools:
-        name: back_address_pool
+      - name: back_address_pool
     backend_http_settings_collection:
       - port: 80
         protocol: http
