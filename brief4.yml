@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   vars:
-    rg_name: S2
+    rg_name: Yuta
     subdomain_prefix: voting
     localisation: westus
     ansible_python_interpreter: venv_ansible/bin/python
