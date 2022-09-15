@@ -4,6 +4,7 @@
     rg_name: S2
     subdomain_prefix: voting
     localisation: westus
+    ansible_python_interpreter: venv_ansible/bin/python
   connection: local
   tasks:
   - import_tasks: base.yml
@@ -14,5 +15,6 @@
     ansible.builtin.template:
       src: cloud-init.yml.tmpl
       dest: cloud-init.yml
-  - import_tasks: vmss.yml
   - import_tasks: gateway.yml
+  - import_tasks: vmss.yml
+
