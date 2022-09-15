@@ -1,6 +1,5 @@
 
     - name: Create VMSS
-      no_log: true
       azure_rm_virtualmachinescaleset:
         resource_group: "{{rg.state.name}}"
         name: "vm_ss"
